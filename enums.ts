@@ -29,5 +29,3 @@ export enum TimeFormats {
   HumanFull = 'M/D HH:mm:ss',
   HumanTime = 'HH:mm:ss',
 }
-
-//test
