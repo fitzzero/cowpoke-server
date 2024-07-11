@@ -1,4 +1,4 @@
-import { Status, _BaseProps } from 'cowpoke-types/_base'
+import { Status } from '../../types/cowpoke/_base'
 
 export interface LoggerOptions {
   type?: 'alert' | 'start' | 'success' | 'dev' | 'end'

@@ -1,12 +1,12 @@
 // Schema
-import { UserProps } from 'cowpoke-types/user'
 import { MongoCollection, _BaseSchema } from '../_mongoCollection'
 import { Schema } from 'mongoose'
 import { Sessions } from './user.sessions'
 import { Aces } from '../ace/ace'
 import { UserAccounts } from './user.accounts'
-import { AccessLevels, EntityKinds } from '../../enums'
 import { logAlert } from '../../lib/logger'
+import { UserProps } from '../../../types/cowpoke/user'
+import { AccessLevels, EntityKinds } from '../../../types/cowpoke/common'
 
 const name = EntityKinds.User
 

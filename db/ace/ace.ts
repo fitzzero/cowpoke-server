@@ -1,8 +1,8 @@
 import { Schema } from 'mongoose'
 import { MongoCollection, _BaseSchema } from '../_mongoCollection'
-import { AceLookup, AceProps } from 'cowpoke-types/access'
-import { Nullish } from 'cowpoke-types/_base'
-import { AccessLevels, EntityKinds } from '../../enums'
+import { Nullish } from '../../../types/cowpoke/_base'
+import { AceProps, AceLookup } from '../../../types/cowpoke/access'
+import { EntityKinds, AccessLevels } from '../../../types/cowpoke/common'
 
 const name = EntityKinds.Ace
 

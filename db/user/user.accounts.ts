@@ -1,7 +1,7 @@
 import { Schema } from 'mongoose'
 import { MongoCollection, _BaseSchema } from '../_mongoCollection'
-import { UserAccountProps } from 'cowpoke-types/account'
-import { EntityKinds } from '../../enums'
+import { EntityKinds } from '../../../types/cowpoke/common'
+import { UserAccountProps } from '../../../types/cowpoke/account'
 
 const name = EntityKinds.Accounts
 

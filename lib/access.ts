@@ -1,4 +1,4 @@
-import { AccessLevels } from '../enums'
+import { AccessLevels } from '../../types/cowpoke/common'
 
 export const accessString = (access: AccessLevels): string => {
   switch (access) {

@@ -1,7 +1,7 @@
 import { Schema } from 'mongoose'
 import { MongoCollection, _BaseSchema } from '../_mongoCollection'
-import { SessionProps } from 'cowpoke-types/user'
-import { EntityKinds } from '../../enums'
+import { SessionProps } from '../../../types/cowpoke/user'
+import { EntityKinds } from '../../../types/cowpoke/common'
 
 const name = EntityKinds.Session
 

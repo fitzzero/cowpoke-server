@@ -1,12 +1,12 @@
 import { Schema } from 'mongoose'
 import { MongoCollection, _BaseSchema } from '../_mongoCollection'
-import { AccessProps, Scopes } from 'cowpoke-types/access'
-import { Nullish } from 'cowpoke-types/_base'
 import { Users } from './users'
-import { UserProps } from 'cowpoke-types/user'
-import { AccessLevels, EntityKinds } from '../../enums'
 import { logAlert } from '../../lib/logger'
 import { emitChanges } from '../../io/ioEvents'
+import { Nullish } from '../../../types/cowpoke/_base'
+import { Scopes, AccessProps } from '../../../types/cowpoke/access'
+import { UserProps } from '../../../types/cowpoke/user'
+import { EntityKinds, AccessLevels } from '../../../types/cowpoke/common'
 
 const name = EntityKinds.Access
 

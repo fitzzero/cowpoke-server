@@ -1,31 +1,35 @@
 import { Model, QueryOptions, Schema } from 'mongoose'
-import {
-  Id,
-  IndexCollection,
-  BasicProps,
-  Nullish,
-  PartialId,
-  _BaseProps,
-} from 'cowpoke-types/_base'
 import { db } from './_connect'
 import { logAlert, logStart, logStatus, logSuccess } from '../lib/logger'
 import { Socket } from 'socket.io'
 import { emitChanges } from '../io/ioEvents'
-import {
-  CreateRequest,
-  DeleteRequest,
-  ReadRequest,
-  UpdateRequest,
-  EntityResponse,
-  IndexRequest,
-  CustomEventCollection,
-} from 'cowpoke-types/entity'
 import { DeleteResult } from 'mongodb'
-import { AccessProps, AceLookup, CheckAccessProps } from 'cowpoke-types/access'
 import { defaultError, defaultUnauth } from '../lib/errors'
 import { accessString } from '../lib/access'
 import { union } from 'lodash'
-import { AccessLevels, EntityKinds } from '../enums'
+import {
+  BasicProps,
+  Id,
+  IndexCollection,
+  Nullish,
+  PartialId,
+  _BaseProps,
+} from '../../types/cowpoke/_base'
+import {
+  CustomEventCollection,
+  CreateRequest,
+  EntityResponse,
+  DeleteRequest,
+  IndexRequest,
+  ReadRequest,
+  UpdateRequest,
+} from '../../types/cowpoke/entity'
+import {
+  AceLookup,
+  AccessProps,
+  CheckAccessProps,
+} from '../../types/cowpoke/access'
+import { AccessLevels, EntityKinds } from '../../types/cowpoke/common'
 
 export const _BaseSchema = {
   createdAt: { type: Number, required: true },
